@@ -6,8 +6,8 @@ const ProviderSchema = new Schema(
   {
     category_id: {type: Number},
     category_name: {type: String},
-    category_data: {type: Object},
-    price_and_duration: {type: Array},
+    service_single: {type: Object},
+    service_child: {type: Array},
   },
   {timestamps: true, versionKey: false},
 );
