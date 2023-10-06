@@ -1,4 +1,4 @@
-const ProviderModel = require('@models/provider.model.js');
+const ProviderModel = require('../models/provider.model.js');
 
 const serviceSingle = async (req, res) => {
   const postId = req.params.id;
