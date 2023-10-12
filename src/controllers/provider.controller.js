@@ -9,7 +9,7 @@ const serviceSingle = async (req, res) => {
     const result = await ProviderModel.findOne({category_id: postId});
     return res.status(200).json({
       msg: 'Success.',
-      reponse: result.service_single,
+      response: result.service_single,
       status: 200,
     });
   } catch (error) {
@@ -25,7 +25,7 @@ const serviceChild = async (req, res) => {
     const result = await ProviderModel.findOne({category_id: postId});
     return res.status(200).json({
       msg: 'Success.',
-      reponse: result.service_child,
+      response: result.service_child,
       status: 200,
     });
   } catch (error) {
@@ -39,10 +39,11 @@ const serviceForm = async (req, res) => {
   console.log('| ----------------------------------');
   try {
     const result = await ProviderModel.findOne({category_id: postId});
+
     return res.status(200).json({
       msg: 'Success.',
       category_response: result.category_response,
-      reponse: result.service_form,
+      response: result.service_form,
       status: 200,
     });
   } catch (error) {
